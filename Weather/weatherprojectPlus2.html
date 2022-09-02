@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Mouse+Memoirs&family=Uchen&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>
+        Will you need a pair of sunglasses or an umbrella today?
+    </h1>
+    <h2> Let's find out the weather in your city!</h2>
+
+<span>    
+  <form id="search-form">
+  <input id="search-input" type="text" placeholder="Search for a city" autocomplete="off" autofocus="on"/>
+  <input type="submit" value="Search" />
+  </form>
+<button id="button-location"> Current Location </button>
+</span>
+<h3 class="time"> current time </h3>  
+<div class="row" class="current">
+  <div class="col-3" id="city">
+    Neverland
+  </div>
+  <div>
+    <span class="units" id="temperature"> 27 </span>
+    <a href="#">°C</a> |
+    <a href="#">°F</a>
+  </div>
+  <span class="hum">Humidity💧</span> 
+  <div class="col-3" id="humidity">
+  5%
+  </div>
+  <span> Wind💨 </span>
+  <div class="col-3" id="wind"> 
+    2km/h
+  </div>
+</div>
+<div class="row" class="days">
+  <div class="col" class="mon"> Monday <br /> 34°C ☀ </div>
+  <div class="col" class="tue"> Tuesday <br /> 25°C ☂ </div>
+  <div class="col" class="wed"> Wednesday <br /> 24°C ☂ </div>
+  <div class="col" class="thu"> Thursday <br /> 35°C ☀ </div>
+  <div class="col" class="fri"> Friday <br /> 34°C ☀ </div>
+</div>
+
+
+
+
+</div>   
+<link rel="stylesheet" href="src/css.css">
+<script src="src/js.js"></script>
+</body>
+</html>
